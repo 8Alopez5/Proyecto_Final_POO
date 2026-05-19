@@ -25,11 +25,6 @@ public class Main {
 
 
 
-
-
-        System.out.println("\n=== MODULO 1: USUARIOS Y RELACIONES ===");
-        System.out.println("=== Jacobo Ochoa                     ===\n");
-
         GestorUsuarios gestorUsuarios = GestorUsuarios.getInstancia();
 
 
@@ -111,13 +106,6 @@ public class Main {
 
 
 
-
-
-
-
-
-        System.out.println("=== MODULO 2: CONTENIDO E INTERACCIONES ===");
-        System.out.println("=== Matias Battistolo                   ===\n");
 
         GestorContenido gestorContenido = new GestorContenido();
 
@@ -230,12 +218,5 @@ public class Main {
         gestorUsuarios.mostrarMetricas();
 
 
-        System.out.println("=========================================");
-        System.out.println("  DEMO COMPLETA");
-        System.out.println("  Modulo 1 | Singleton  | Jacobo Ochoa");
-        System.out.println("  Modulo 2 | Factory Method | Matias Battistolo");
-        System.out.println("  Usuarios:  " + gestorUsuarios.getTotalUsuarios());
-        System.out.println("  Contenido: " + gestorContenido.getTotalContenido());
-        System.out.println("=========================================");
     }
 }
