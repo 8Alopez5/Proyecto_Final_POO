@@ -11,11 +11,9 @@ public interface AlgoritmoRecomendacion {
                                          List<Contenido> todoElContenido,
                                          int limite);
 
-
     List<Usuario> recomendarUsuarios(Usuario usuario,
                                       List<Usuario> todosLosUsuarios,
                                       int limite);
-
 
     String getNombre();
 }

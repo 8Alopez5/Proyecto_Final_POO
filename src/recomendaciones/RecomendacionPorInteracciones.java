@@ -30,6 +30,7 @@ public class RecomendacionPorInteracciones implements AlgoritmoRecomendacion {
     }
 
     private int calcularScore(Contenido c) {
+
         return c.getLikes() * 2 + c.getReposts() * 3 + c.getRespuestas();
     }
 
@@ -45,6 +46,7 @@ public class RecomendacionPorInteracciones implements AlgoritmoRecomendacion {
         }
         Collections.sort(filtrado, new Comparator<Usuario>() {
             public int compare(Usuario a, Usuario b) {
+
                 return b.getSeguidores() - a.getSeguidores();
             }
         });
